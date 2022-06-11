@@ -1,0 +1,30 @@
+# Configuration for Speed Carts
+# -----------------------------
+# A server restart is required to apply changes.
+
+# The default speed for all carts in the world, in meters per second.
+defaultSpeed: 8
+
+# The minimum allowable speed limit that can be set, in meters per second.
+minimumSpeed: 1
+
+# The maximum allowable speed limit that can be set, in meters per second.
+maximumSpeed: 128
+
+# The regular expression that's used to determine if a sign should affect the cart's speed.
+# By default, it matches any positive decimal number.
+signRegex: \d+(\.\d+)?
+
+# Base damage multiplier that's used to manipulate all type of damage at the same time
+baseDamageMultiplier: 3
+
+# Damage mutiplier applied when a cart rams an entity
+ramDamageMultiplier: 2
+
+# Damage mutipliers applied when the cart hits a wall
+# One can be used when the cart is still on rail and the other when it has derailed
+wallHitOffRailDamageMultiplier: 1
+wallHitOnRailDamageMultiplier: 0.3
+
+# Multiplier used to determine how far entities will be thrown away by carts
+ejectMultiplier: 1
