@@ -157,7 +157,7 @@ public abstract class AbstractMinecartMixin extends Entity {
 		boolean rammed = false;
 		if (velocityStrength > NO_DAMAGE_BELOW_SPEED) {
 			List<Entity> entities = minecart.world.getOtherEntities(minecart,
-					minecart.getBoundingBox().stretch(realVelocity.normalize().multiply(5)),
+					minecart.getBoundingBox().stretch(realVelocity.normalize()),
 					EntityPredicates.canBePushedBy(minecart).or((entity) -> {
 						return entity instanceof PlayerEntity;
 					}));
